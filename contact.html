@@ -9,6 +9,29 @@
 	<!-- Bootstrap -->
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
+<style>
+.error {
+	background: #ecc;
+	border: 1px solid #933;
+	padding: 0.5em;
+}
+
+.msg {
+	background: #cec;
+	border: 1px solid #393;
+	padding: 0.5em;	
+}
+
+.msg p {
+	padding-left: 0.2em;
+	margin-bottom: 0.2em;
+	font-size: 85%
+	font-weight: bold;	
+}
+
+
+</style>
+
 
 </head>
 
@@ -24,7 +47,7 @@
 				</div>
 			</div>
 		
-			<form role="form">
+			<form role="form" id="myForm">
 				<fieldset>
 					<div class="row">
 						<div class="form-group">
@@ -144,8 +167,38 @@
 </div>
 
 <!-- JavaScript -->
- <script src="js/jquery.min.js"></script>
+<!-- use jQuery from internet -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+ <!-- if jQuery from internet is not available use following: -->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
  <script src="js/bootstrap.min.js"></script>
+
+ <script>
+$(document).ready(function(){
+
+// glyphicon glyphicon-hand-right
+
+var $form = $('#myForm');
+
+$form.find('.group:nth-child(1)')
+	.addClass('msg')
+	.append('<p>Good choice!</p>');
+
+});
+
+/*
+	$('#frmContact').on('submit', function(event){
+		event.preventDefault();
+
+		console.log('Ther form will not submit');
+	});
+
+*/
+
+
+ </script>
 
 </body>
 </html>
