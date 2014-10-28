@@ -2797,8 +2797,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #838b83;
-  border-color: #838b83;
+  background-color: #5a5a5a;
+  border-color: #5a5a5a;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2806,8 +2806,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #6a716a;
-  border-color: #656c65;
+  background-color: #414141;
+  border-color: #3c3c3c;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2829,11 +2829,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #838b83;
-  border-color: #838b83;
+  background-color: #5a5a5a;
+  border-color: #5a5a5a;
 }
 .btn-primary .badge {
-  color: #838b83;
+  color: #5a5a5a;
   background-color: #ffffff;
 }
 .btn-success {
@@ -4588,7 +4588,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #eeeeee;
 }
 .alert {
   padding: 15px;
@@ -4974,6 +4974,9 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5169,14 +5172,14 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: #000000;
   border-color: #dddddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
 }
 .panel-default > .panel-heading .badge {
-  color: #f5f5f5;
+  color: #000000;
   background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
@@ -5300,7 +5303,7 @@ a.list-group-item-danger.active:focus {
 .well {
   min-height: 20px;
   padding: 19px;
-  margin-top: 4.5em;
+  margin-top: 4.8em;
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
@@ -6179,6 +6182,17 @@ body {
   margin-right: auto;
   background-color: #fff;
   padding: 0;
+}
+.containerGallery {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.containerGallery h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 @media (max-width: 767px) {
   .container {

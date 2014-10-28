@@ -9,10 +9,34 @@
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
 
+<style>
+.containerMiddle {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.containerHeader {
+	background-color: ;
+}
+
+.thumb {
+	max-width: 800px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 560px;
+}
+
+li {
+	opacity: 0.3;
+}
+
+
+</style>
 </head>
 
 <body>
-<div class="container">
+<div class="containerGallery">
 
 	<!--   ******  LOGO    and    Navigation bar   ******    -->
 	<div class="containerHeader">
@@ -53,127 +77,136 @@
 	</div>		<!-- end of containerHeader  -->
 
 
-	<div class="containerMain">
-
-		<!--    Panel   -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<h2>Famous people and their blood type</h2>
-				</div> 
-			</div>
-			<div class="panel-body">
-				<div class="row">
-
-					<!--  Thumbnails   -->
-					<ul>
-						<!--  first  thumbnail   -->
-						<li class="thumbnail col-sm-3 col-xs-6"><a href="#typeA" data-toggle="modal"><img src="img/gallery/britneyspears.jpg" alt="Britney Spears" class="img-responsive"></a>
-							<div class="caption"> 
-								 <p><a href="#typeA" data-toggle="modal" class="btn btn-primary btn-block" role="button"> A </a></p>
-							</div>
-						</li>
-
-						<!--  second thumbnail   -->
-						<li class="thumbnail col-sm-3 col-xs-6"><a href="#typeB" data-toggle="modal"><img src="img/gallery/paulmccartney.jpg" alt="Paul McCartney" class="img-responsive"></a>
-							<div class="caption">
-								 <p><a href="#typeB" data-toggle="modal" class="btn btn-primary btn-block" role="button"> B </a></p>
-							</div>
-						</li>
-					
-						<!--  third thumbnail   -->
-						<li class="thumbnail col-sm-3 col-xs-6"><a href="#typeAB" data-toggle="modal"><img src="img/gallery/mickjagger.jpg" alt="Mick Jagger" class="img-responsive"></a>
-							<div class="caption">
-								 <p><a href="#typeAB" data-toggle="modal" class="btn btn-primary btn-block" role="button"> AB</a></p>
-							</div>
-						</li>
-
-						<!--  fourth thumbnail   -->
-						<li class="thumbnail col-sm-3 col-xs-6"><a href="#typeO" data-toggle="modal"><img src="img/gallery/queenelizabethII.jpg" alt="Queen Elizabeth II" class="img-responsive"></a>
-							<div class="caption">
-								 <p><a href="#typeO" data-toggle="modal" class="btn btn-primary btn-block" role="button"> O </a></p>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<!-- modal windows -->
-				<!--  first  modal window   -->
-				<div id="typeA" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-								<h3 class="modal-title">Britney Spears</h3>
-							</div>
-							<div class="modal-body">
-								<img src="img/gallery/britneyspears.jpg" alt="Britney Spears" class="img-responsive">
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!--  second  modal window   -->
-				<div id="typeB" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-								<h3 class="modal-title">Paul McCartney</h3>
-							</div>
-							<div class="modal-body">
-								<img src="img/gallery/paulmccartney.jpg" alt="Paul McCartney" class="img-responsive">
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!--  third  modal window   -->
-				<div id="typeAB" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-								<h3 class="modal-title">Mick Jagger</h3>
-							</div>
-							<div class="modal-body">
-								<img src="img/gallery/mickjagger.jpg" alt="Mick Jagger" class="img-responsive">
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!--  fourth  modal window   -->
-				<div id="typeO" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-								<h3 class="modal-title">Queen Elizabeth II</h3>
-							</div>
-							<div class="modal-body">
-								<img src="img/gallery/queenelizabethII.jpg" alt="Queen Elizabeth II" class="img-responsive">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>	  <!-- end row -->
-		</div>  <!-- end panel -->
-	</div>  <!-- end of containerMain  -->
-
-	<!--  *******   Footer  ***********   -->
-	<footer>
+	<div class="containerMiddle">
 		<div class="row">
-			<p><small> © 2014 adrianar.siteground.net All Rights Reserved </small></p>
+			<h2>Famous people and their blood type</h2>
+		</div> 
+
+		<div class="row">
+			<div class="thumb">
+				<!--  Thumbnails   -->
+				<ul>
+					<!--  first  thumbnail   -->
+					<li class="thumbnail col-xs-3"><a href="#typeA" data-toggle="modal"><img src="img/gallery/britneyspears.jpg" alt="Britney Spears" class="img-responsive"></a>
+						<div class="caption"> 
+							 <p><a href="#typeA" data-toggle="modal" class="btn btn-primary btn-block" role="button"> A </a></p>
+						</div>
+					</li>
+
+					<!--  second thumbnail   -->
+					<li class="thumbnail col-xs-3"><a href="#typeB" data-toggle="modal"><img src="img/gallery/paulmccartney.jpg" alt="Paul McCartney" class="img-responsive"></a>
+						<div class="caption">
+							 <p><a href="#typeB" data-toggle="modal" class="btn btn-primary btn-block" role="button"> B </a></p>
+						</div>
+					</li>
+				
+					<!--  third thumbnail   -->
+					<li class="thumbnail col-xs-3"><a href="#typeAB" data-toggle="modal"><img src="img/gallery/mickjagger.jpg" alt="Mick Jagger" class="img-responsive"></a>
+						<div class="caption">
+							 <p><a href="#typeAB" data-toggle="modal" class="btn btn-primary btn-block" role="button"> AB</a></p>
+						</div>
+					</li>
+
+					<!--  fourth thumbnail   -->
+					<li class="thumbnail col-xs-3"><a href="#typeO" data-toggle="modal"><img src="img/gallery/queenelizabethII.jpg" alt="Queen Elizabeth II" class="img-responsive"></a>
+						<div class="caption">
+							 <p><a href="#typeO" data-toggle="modal" class="btn btn-primary btn-block" role="button"> O </a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>  <!-- end of row -->
+
+		<!-- modal windows -->
+		<!--  first  modal window   -->
+		<div id="typeA" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h3 class="modal-title">Britney Spears</h3>
+					</div>
+					<div class="modal-body">
+						<img src="img/gallery/britneyspears.jpg" alt="Britney Spears" class="img-responsive">
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer>
+
+		<!--  second  modal window   -->
+		<div id="typeB" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h3 class="modal-title">Paul McCartney</h3>
+					</div>
+					<div class="modal-body">
+						<img src="img/gallery/paulmccartney.jpg" alt="Paul McCartney" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--  third  modal window   -->
+		<div id="typeAB" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h3 class="modal-title">Mick Jagger</h3>
+					</div>
+					<div class="modal-body">
+						<img src="img/gallery/mickjagger.jpg" alt="Mick Jagger" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  fourth  modal window   -->
+		<div id="typeO" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+						<h3 class="modal-title">Queen Elizabeth II</h3>
+					</div>
+					<div class="modal-body">
+						<img src="img/gallery/queenelizabethII.jpg" alt="Queen Elizabeth II" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>  <!-- end of containerMain  -->
 		
 </div>		<!-- end container -->
 
 
 <!-- JavaScript -->
+<!-- use jQuery from internet -->
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- JavaScript -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+
+
+// adjust opacity of images
+$('li ').hover(
+	function(){
+		$('li:hover').css({opacity:'1.0'});},
+	function(){
+		$('li').css({opacity:'0.3'});
+	});
+
+//
+
+
+});
+</script>
 
 </body>
 </html>

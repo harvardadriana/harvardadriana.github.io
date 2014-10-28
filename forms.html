@@ -9,18 +9,31 @@
 	<!-- Bootstrap -->
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
-<style>
-body {
-	background-color: black;
-}
-.main {
-	margin: 2em;
-	padding: 0.5em;
-	background-color: #FFCCFF;
-}
+
+	<style>
+		body {
+			background-color: black;
+		}
+		.main {
+			margin: 2em;
+			padding: 1.5em;
+			background-color: #FFCCFF;
+		}
+		#flag {
+			padding: 1.5em;
+		}
+		#fakebutton {
+			background-color: #414141;
+			margin-left: 25px;
+			width: 395px;
+			padding: 12px;
+			border-radius: 5px;
+			color: #fff;
+		}
 
 
-</style>
+	</style>
+
 </head>
 
 <body>
@@ -28,122 +41,145 @@ body {
 <div class="container">
 
 	<div class="main">
-
-	<h1>Survey: we would like to know you better</h1>
-
-	<form role="form">
-		<div class="form-group">
-			<label for="myEmail">Email address</label>
-			<input type="email" class="form-control" id="myEmail" placeholder="youremail@email.com">
-			</label>
-		</div>
-		<hr>
-
-			<h3>Group age:</h3>
-			<div class="radio">
-				<label class="radio">
-					<input type="radio" name="question3" id="ageGroup1" value="option1"> 20 ~ 30
-				</label>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Survey: we would like to know you better</h1>
 			</div>
-			<div class="radio">
-				<label class="radio">
-					<input type="radio" name="question3" id="ageGroup2" value="option2"> 31 ~ 40
-				</label>
-			</div>
-			<div class="radio">
-				<label class="radio">
-					<input type="radio" name="question3" id="ageGroup3" value="option3"> 41 ~ 50
-				</label>
-			</div>
-			<hr>
-
-
-			<h3>What continent you are located:</h3>
-			<select class="form-control">
-				<option>Asia</option>
-				<option>Africa</option>
-				<option>North America</option>
-				<option>Europe</option>
-				<option>South America</option>
-				<option>Antarctica</option>
-				<option>Australia</option>
-				<option>I am not sure...</option>
-			</select>
-			<hr>
-
-			<h3>How many times you read.... a week:</h3>
-			<label class="radio-inline">
-				<input type="radio" name="question2" id="radio-inline1" value=""> Never
-			</label>
-			<label class="radio-inline">
-				<input type="radio" name="question2" id="radio-inline2" value=""> 1
-			</label>
-			<label class="radio-inline">
-				<input type="radio" name="question2" id="radio-inline3"value=""> 2
-			</label>
-			<label class="radio-inline">
-				<input type="radio" name="question2" id="radio-inline4" value=""> 3
-			</label>
-			<hr>
-
-
-			<h3>Question 1</h3>
-			<div class="radio">
-				<label>
-					<input type="radio" name="question1" id="optionOne" value="option1">
-					Option one 
-				</label>
-			</div>
-			<div class="radio">
-				<label>
-					<input type="radio" name="question1" id="optionTwo" value="option2">
-					Option two
-				</label>
-			</div>
-			<div class="radio">
-				<label>
-					<input type="radio" name="question1" id="optionThree" value="option3">
-					Option three 
-				</label>
-			</div>
-			<hr>
-
-			<h3>What topics do you have interest?</h3>
-			<div class="checkbox">
-				<label class="checkbox-inline">
-					<input type="checkbox" name="question5" id="sports" value="option1"> Sports
-				</label>
-			</div>
-			<div class="checkbox">
-				<label class="checkbox-inline">
-					<input type="checkbox" name="question5" id="news" value="option2">  News
-				</label>
-			</div>
-			<div class="checkbox">
-				<label class="checkbox-inline">
-					<input type="checkbox" name="question5" id="economics"  value="option3">  Economics
-				</label>
-			</div>
-
-			<button type="submit" class="btn btn-default">Submit answers</button>
-			<hr>
-
-
-			<h3>Would you like to subscribe to our daily bloodhoroscope for only $99.99?</h3>
-
-
-			<button type="button" class="btn btn-primary">Sure!</button>
-			<button type="button" class="btn btn-primary">Nope, but please keep asking me everyday.</button>
-
-
-
-
-
 		</div>
 
-	</form>
+		<form role="form" id="form">
 
+			<!-- Name  -->
+			<div class="row">
+				<div class="col-xs-7 form-group">
+					<label for="myName">Name</label>
+					<input type="text" class="form-control" id="myName" value="name" placeholder="Type your name here">
+				</div>
+			</div>
 
+			<!-- Email  -->
+			<div class="row">
+				<div class="col-xs-7 form-group">
+					<label for="myEmail">Email address</label>
+					<input type="email" class="form-control" id="myEmail" placeholder="youremail@email.com">
+				</div>
+			</div>
+			<hr>
+
+			<!-- Age  -->
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<fieldset>
+						<label class="control-label">Group age:</label>
+						<div class="radio">
+							<label for="ageGroup1">
+								<input type="radio" name="question3" id="ageGroup1" value="option1"> 20 ~ 30
+							</label>
+						</div>
+						<div class="radio">
+							<label for="ageGroup2">
+								<input type="radio" name="question3" id="ageGroup2" value="option2"> 31 ~ 40
+							</label>
+						</div>
+						<div class="radio">
+							<label for="ageGroup3">
+								<input type="radio" name="question3" id="ageGroup3" value="option3"> 41 ~ 50
+							</label>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<hr>
+
+			<!-- Location  -->
+			<div class="row">
+				<div class="col-xs-7 form-group">
+					<label for="countries" class="control-label">What continent you are located:</label>
+					<select id="countries" class="form-control">
+						<option>Please choose your country:</option>
+						<option value="argentina">Argentina</option>
+						<option value="australia">Australia</option>
+						<option value="mexico">Mexico</option>
+						<option value="spain">Spain</option>
+						<option value="sweden">Sweden</option>
+						<option value="uk">UK</option>
+						<option value="usa">USA</option>
+						<option>I am not sure...</option>
+					</select>
+				</div>
+				<div class="col-xs-3" id="flag">
+					<span class="help-block"></span>
+				</div>
+			</div>
+			<hr>
+
+			<!-- How many times  -->
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<fieldset>
+						<label for="question3" class="control-label">How many times you read.... a week:</legend>
+						<div id="question3">
+							<label class="radio-inline">
+								<input type="radio" name="question3" id="radio-inline1" value=""> Never
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="question3" id="radio-inline2" value=""> 1
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="question3" id="radio-inline3" value=""> 2
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="question3" id="radio-inline4" value=""> 3
+							</label>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<hr>
+
+			<!-- What topics...  -->
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<label class="control-label">What topics do you have interest?</label>
+					<div class="checkbox">
+						<label class="checkbox-inline">
+							<input type="checkbox" name="question5" id="sports" value="option1"> Sports
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="checkbox-inline">
+							<input type="checkbox" name="question5" id="news" value="option2">  News
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="checkbox-inline">
+							<input type="checkbox" name="question5" id="economics"  value="option3">  Economics
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="submit" class="btn btn-default" id="submit-btn'">Submit answers</button>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<h3>Would you like to subscribe to our daily bloodhoroscope for only $99.99?</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+					<button type="button" class="btn btn-primary btn-lg" id="subscribe-btn">Sure!</button>
+				</div>
+				<div class="col-xs-5">
+					<div id="fakebutton">Nope, but please keep asking me everyday.</div>
+				</div>
+			</div>
+		</form>
 
 
 	</div>
@@ -153,16 +189,100 @@ body {
 
 <!-- JavaScript -->
 <!-- use jQuery from internet -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
- <!-- if jQuery from internet is not available use following: -->
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+<!-- if jQuery from internet is not available use following: -->
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
 
-    <script>
+<script type="text/javascript">
+$(document).ready(function(){
+	console.log('Ready!');
 
-    </script>
+	// changing flags
+	$('#countries').change(function(){
+		if ($('#countries').val() == 'argentina') {
+				$('.help-block').html('<img src="img/flags/Argentina.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'australia') 
+			{
+				$('.help-block').html('<img src="img/flags/Australia.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'mexico') 
+			{
+				$('.help-block').html('<img src="img/flags/Mexico.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'spain') 
+			{
+				$('.help-block').html('<img src="img/flags/Spain.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'sweden') 
+			{
+				$('.help-block').html('<img src="img/flags/Sweden.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'uk') 
+			{
+				$('.help-block').html('<img src="img/flags/UK.GIF" alt="" class="img-responsive">');
+			} else if ($('#countries').val() == 'usa') 
+			{
+				$('.help-block').html('<img src="img/flags/USA.GIF" alt="" class="img-responsive">');
+			} else {
+				$('.help-block').text('Please pick a country!');
+			}
+	}); //end changing flags
+
+});	
 
 
-    </body>
-    </html>
+/*
+    	$('#submit-btn').click(function(){
+    		$('#submit-btn').replaceWith('<p><span glyphicon glyphicon-envelope</span></p>');
+    		$('#submit-btn').slideDown(2000);
+		$('#submit-btn').replaceWith('<p><span class="label label-success">Your answers have been submitted!</span></p>');
+	});
+
+	$('#dontsubscribe-btn').hover(function(){ 
+						   $('#dontsubscribe-btn').fadeOut(2000); //hide don't subscribe button 
+						}, 
+					function() {
+						    console.log('dont subscribe button was left behind');
+						    $('#dontsubscribe-btn').fadeIn(5000);
+		       				} //end css
+	);  // end dontsubscribe-btn hover
+
+
+
+	$('#fakebutton').on({mouseover:function() {
+		$('#fakebutton').animate({ 'right' : '500px' }, 1000, 'swing');
+	}});
+
+	// 
+	$('#form').submit(function(e){
+		e.preventDefault();
+		
+		alert('Welcome ' +
+			$('#myName').val()
+		); 
+
+
+
+//move button
+//html
+<button>button</button>​
+//css
+button{
+    position:absolute;
+    top:10px;
+    left:10px;
+}​
+//js
+$(function(){
+    $("#fakebutton").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*200)+"px",
+                top:(Math.random()*200)+"px",
+            });
+        }
+    });
+});​
+*/
+</script>
+
+</body>
+</html>
