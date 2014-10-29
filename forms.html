@@ -51,9 +51,10 @@
 
 			<!-- Name  -->
 			<div class="row">
-				<div class="col-xs-7 form-group">
-					<label for="myName">Name</label>
-					<input type="text" class="form-control" id="myName" value="name" placeholder="Type your name here">
+				<div class="col-xs-7 form-group name-group">
+					<label for="myName" class="control-label">Name <span class=""></span></label>
+					<input type="text" class="form-control" id="myName">
+					<span class="help-block"></span>
 				</div>
 			</div>
 
@@ -61,7 +62,7 @@
 			<div class="row">
 				<div class="col-xs-7 form-group">
 					<label for="myEmail">Email address</label>
-					<input type="email" class="form-control" id="myEmail" placeholder="youremail@email.com">
+					<input type="email" class="form-control" id="myEmail">
 				</div>
 			</div>
 			<hr>
@@ -180,11 +181,27 @@
 				</div>
 			</div>
 		</form>
-
-
 	</div>
-
 </div>
+
+<!-- modal window -->
+
+<div class="modal fade" id="myModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title">Thank you!</h4>
+			</div>
+		<div class="modal-body">
+			<p>Thanks for submitting the form! You will hear back from us shortly.</p>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 <!-- JavaScript -->
@@ -194,39 +211,10 @@
 <!-- if jQuery from internet is not available use following: -->
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function(){
-	console.log('Ready!');
 
-	// changing flags
-	$('#countries').change(function(){
-		if ($('#countries').val() == 'argentina') {
-				$('.help-block').html('<img src="img/flags/Argentina.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'australia') 
-			{
-				$('.help-block').html('<img src="img/flags/Australia.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'mexico') 
-			{
-				$('.help-block').html('<img src="img/flags/Mexico.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'spain') 
-			{
-				$('.help-block').html('<img src="img/flags/Spain.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'sweden') 
-			{
-				$('.help-block').html('<img src="img/flags/Sweden.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'uk') 
-			{
-				$('.help-block').html('<img src="img/flags/UK.GIF" alt="" class="img-responsive">');
-			} else if ($('#countries').val() == 'usa') 
-			{
-				$('.help-block').html('<img src="img/flags/USA.GIF" alt="" class="img-responsive">');
-			} else {
-				$('.help-block').text('Please pick a country!');
-			}
-	}); //end changing flags
-
-});	
 
 
 /*
