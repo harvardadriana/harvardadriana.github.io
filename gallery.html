@@ -7,32 +7,9 @@
 
 	<!-- Bootstrap -->
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/gallery.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
-
-<style>
-.containerMiddle {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.containerHeader {
-	background-color: ;
-}
-
-.thumb {
-	max-width: 800px;
-	margin-top: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 560px;
-}
-
-li {
-	opacity: 0.3;
-}
-
-
-</style>
+	
 </head>
 
 <body>
@@ -194,14 +171,13 @@ li {
 $(document).ready(function(){
 
 
-// adjust opacity of images
-$('li ').hover(
+// hover effect - adjust opacity of images and increase size
+$('.thumb li ').hover(
 	function(){
-		$('li:hover').css({opacity:'1.0'});},
+		$('.thumb li:hover').css({opacity:'1.0', width: '+=10%', height: '+=10%'});},
 	function(){
-		$('li').css({opacity:'0.3'});
+		$('.thumb li').css({opacity:'0.3', width: "", height: ""});
 	});
-
 //
 
 

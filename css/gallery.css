@@ -1,0 +1,20 @@
+.containerMiddle {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.containerHeader {
+	background-color: ;
+}
+
+.thumb {
+	max-width: 800px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 560px;
+}
+
+.thumb li {
+	opacity: 0.3;
+}
