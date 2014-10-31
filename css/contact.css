@@ -1,0 +1,19 @@
+body {
+color: #fff;
+}
+
+h2 {
+font-size: 5em;
+font-family: 'Great Vibes', cursive;
+text-align: center;
+}
+
+img {
+width: 250px;
+margin-top: 45px;
+text-align: center;
+}
+
+.glyphicon {
+color: #BCC3CC;
+}

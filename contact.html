@@ -8,197 +8,91 @@
 
 	<!-- Bootstrap -->
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/contact.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
-<style>
-.error {
-	background: #ecc;
-	border: 1px solid #933;
-	padding: 0.5em;
-}
-
-.msg {
-	background: #cec;
-	border: 1px solid #393;
-	padding: 0.5em;	
-}
-
-.msg p {
-	padding-left: 0.2em;
-	margin-bottom: 0.2em;
-	font-size: 85%
-	font-weight: bold;	
-}
-
-
-</style>
-
-
 </head>
 
 <body>
 <div class="containerContact">
 
-	<!-- top half of the page: Forms -->
-	<div id="top">
+	<!-- images -->
+	<nav id="top">
 		<div class="row">
-			<div  class="row">
-				<div class="col-xs-5 col-xs-offset-3">
-					<h2>Email us</h2>
-				</div>
+			<div class="col-xs-3 col-xs-offset-1">
+				<a href="index.html"><img src="img/home.jpg" alt="" class="img-responsive"></a>
 			</div>
-		
-			<form role="form" id="myForm">
-				<fieldset>
-					<div class="row">
-						<div class="form-group">
-							<div class="col-xs-5 col-xs-offset-3">
-								<input type="text" id="name" class="form-control" placeholder="Name">
-							</div>
-						</div>
-					</div>
+			<div class="col-xs-3 col-xs-offset-1">
+				<img src="img/email.jpg" alt="" id="email" class="img-responsive">
+			</div>
+			<div class="col-xs-3 col-xs-offset-1">
+				<img src="img/phone.jpg" alt="" id="phone" class="img-responsive">
+			</div>
+		</div>
+	</nav> 
 
-					<div class="row">
-						<div class="form-group">
-							<div class="col-xs-5 col-xs-offset-3">
-								<input type="email" id="email" class="form-control" placeholder="Email">
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="form-group">
-							<div class="col-xs-5 col-xs-offset-3">
-								<input type="text" id="subject" class="form-control" placeholder="Subject">
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="form-group">
-							<div class="col-xs-5 col-xs-offset-3">
-								<textarea id="message" class="form-control" rows="3" placeholder="Message"></textarea>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xs-2 col-xs-offset-3">
-							<button type="submit" class="btn btn-default btn-lg" id="sendButton">Send</button>
-						</div>
-					</div>
-
-				</fieldset>
-			</form>
-		</div>  <!-- end of top row  -->
-	</div>
-
-	<!-- bottom of the page on large/medium screens-->
-	<div id="bottom">
+	<!-- telephone number -->
+	<div id="contact" class="">
 		<div class="row">
-			<div class="hidden-sm hidden-xs">
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></p>
-					</div>
-					<div class="col-xs-2">
-						<p><span class="glyphicon glyphicon-phone-alt"></span></p>
-					</div>
-					<div class="col-xs-2">
-						<p><span class="glyphicon glyphicon-print"></span></p>
-					</div>
-					<div class="col-xs-2">
-						<p><span class="glyphicon glyphicon-envelope"></span></p>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><a href="index.html">Home</a></p>
-					</div>
-					<div class="col-xs-2">
-						<p>+99 9 9000 0000 </p>
-					</div>
-					<div class="col-xs-2">
-						<p>+99 9 9000 0000 </p>	
-					</div>
-					<div class="col-xs-2">
-						<p>emailus@email.com </p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- bottom of the page on small/extra small screens-->
-			<div class="hidden-lg hidden-md">
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></p>
-					</div>
-					<div class="col-xs-3 col-xs-offset-1">
-						<p><a href="index.html">Home</a></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><span class="glyphicon glyphicon-phone-alt"></span></p>
-					</div>
-					<div class="col-xs-3 col-xs-offset-1">
-						<p>+99 9 9000 0000 </p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><span class="glyphicon glyphicon-print"></span></p>
-					</div>
-					<div class="col-xs-3 col-xs-offset-1">
-						<p>+99 9 9000 0000 </p>	
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-2 col-xs-offset-2">
-						<p><span class="glyphicon glyphicon-envelope"></span></p>
-					</div>
-					<div class="col-xs-3 col-xs-offset-1">
-						<p>emailus@email.com </p>
-					</div>
-				</div>
+			<div class="col-xs-12">
+				<h2>Contact us</h2>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<!-- forms -->
+	<form role="form" id="myForm" class="hidden">
+		<fieldset>
+			<div class="row">
+				<div class="col-xs-5 col-xs-offset-4 form-group name-group">
+					<label class="sr-only" for="name">Name</label>
+					<input type="text" id="name" class="form-control" placeholder="Name">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-5 col-xs-offset-4 form-group email-group">
+					<label class="sr-only" for="email">Email</label>
+					<input type="text" id="email" class="form-control" placeholder="Email">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-5 col-xs-offset-4 form-group message-group">
+					<label class="sr-only" for="message">Message</label>
+					<textarea id="message" class="form-control" rows="3" placeholder="Message*"></textarea>
+					<span class="help-block"></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-2 col-xs-offset-4">
+					<button type="submit" class="btn btn-default btn-lg" id="sendButton">Send</button>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+
+	<!-- telephone number -->
+	<div id="myPhone" class="hidden">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>(99) 99-9999-9999</h2>
+			</div>
+		</div>
+	</div>
+
+</div>  <!-- end phone number -->
 
 <!-- JavaScript -->
 <!-- use jQuery from internet -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
  <!-- if jQuery from internet is not available use following: -->
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+ <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
  <script src="js/bootstrap.min.js"></script>
-
- <script>
-$(document).ready(function(){
-
-// glyphicon glyphicon-hand-right
-
-var $form = $('#myForm');
-
-$form.find('.group:nth-child(1)')
-	.addClass('msg')
-	.append('<p>Good choice!</p>');
-
-});
-
-/*
-	$('#frmContact').on('submit', function(event){
-		event.preventDefault();
-
-		console.log('Ther form will not submit');
-	});
-
-*/
-
-
- </script>
+ <script src="js/contact.js"></script>
 
 </body>
 </html>
