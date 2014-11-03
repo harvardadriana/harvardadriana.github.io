@@ -1,13 +1,6 @@
 $(document).ready(function(){
 	console.log("Ready!");
 
-	// image hovering
-	$('img').hover(function(){
-		$(this).css( 'border-bottom', 'solid 4px silver' )}, 
-		function(){
-		$(this).css( 'border-bottom', 'none' )}
-	);
-
 	// show email form
 	$('#email').click(function () {
 		$('#myForm').attr('class', 'visible');
@@ -18,11 +11,25 @@ $(document).ready(function(){
 
 	// show phone form
 	$('#phone').click(function () {
-		console.log('The phone button was clicked');
 		$('#myPhone').attr('class', 'visible');
 		$('#contact').attr('class', 'hidden');
 		$('#myForm').attr('class', 'hidden');
 	});
+
+	// validating message field
+	$('#message').focusout(function(){
+		if($('#message').val().length == 0) {
+			$('.message-group .help-block').text("Please enter your message");
+			$('.message-group').attr({
+				class: "col-xs-5 col-xs-offset-4 form-group message-group has-error"
+			}); // end attr
+		} else {
+			$('.message-group .help-block').text('');
+			$('.message-group').attr({
+				class: 'col-xs-5 col-xs-offset-4 form-group message-group'
+			}); // end attr
+		}
+	}); // end focus out
 
 	// validating message field
 	$('button').click(function(submit){
@@ -37,6 +44,5 @@ $(document).ready(function(){
 			submit.preventDefault();
 		}
 	}); // end click
-
 
 });  // end ready

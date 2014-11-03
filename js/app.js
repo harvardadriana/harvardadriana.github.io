@@ -31,23 +31,39 @@ $(document).ready(function(){
 	// validating name field
 	$('#myName').focusout(function(){
 		if($('#myName').val().length == 0) {
-			$('.name-group .help-block').text("Please enter your name");
 			$('.name-group').attr({
 				class: "col-xs-7 form-group name-group has-error"
 			}); // end attr
 		} else {
-			$('.name-group .help-block').text('');
 			$('.name-group').attr({
 				class: 'col-xs-7 form-group name-group'
 			}); // end attr
 		}
 	}); // end focus out
 
+	// validating email field
+	$('#myEmail').focusout(function(){
+		if($('#myEmail').val().length == 0) {
+			$('.email-group').attr({
+				class: "col-xs-7 form-group email-group has-error"
+			}); // end attr
+		} else {
+			$('.email-group').attr({
+				class: 'col-xs-7 form-group email-group'
+			}); // end attr
+		}
+	}); // end focus out
+
+	// checking when submit button is clicked
 	$('button').click(function(submit){
 		if($('#myName').val().length == 0) {
-			$('.name-group .help-block').text("Please enter your name");
 			$('.name-group').attr({
 				class: "col-xs-7 form-group name-group has-error"
+			}); // end attr
+			submit.preventDefault();
+		} else  if($('#myEmail').val().length == 0) {
+			$('.email-group').attr({
+				class: "col-xs-7 form-group email-group has-error"
 			}); // end attr
 			submit.preventDefault();
 		} else {

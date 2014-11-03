@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> What your blood type is saying</title>
+
+	<!-- Bootstrap -->
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/contact.css" rel="stylesheet">
+	<script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="containerContact">
+	<div class="row">
+		<div class="col-xs-12 form-group">
+			<h3>Would you like to subscribe to our daily bloodhoroscope for only $99.99?</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-primary btn-lg" id="subscribe-btn">Sure!</button>
+		</div>
+		<div class="col-xs-5">
+			<div id="fakebutton">Nope, but please keep asking me everyday.</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<!-- use jQuery from internet -->
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+ <!-- if jQuery from internet is not available use following: -->
+ <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/contact.js"></script>
+
+<script>
+$(document).ready(function(){
+	console.log("Ready!");
+
+	// image hovering
+	$('img').hover(function(){
+		$(this).css( 'border-bottom', 'solid 4px silver' )}, 
+		function(){
+		$(this).css( 'border-bottom', 'none' )}
+	);
+</script>
+
+</body>
+</html>
