@@ -71,7 +71,7 @@
 			<!-- Location  -->
 			<div class="row">
 				<div class="col-xs-7 form-group">
-					<label for="countries" class="control-label">What continent you are located:</label>
+					<label for="countries" class="control-label">What country you are located:</label>
 					<select id="countries" class="form-control">
 						<option>Please choose your country:</option>
 						<option value="argentina">Argentina</option>
@@ -90,27 +90,41 @@
 			</div>
 			<hr>
 
-			<!-- pets  -->
+			<!-- magazines  -->
+			<div class="row">
+				<div class="col-xs-12">
+					<label class="control-label">Do you subscribe to any magazines?</label>
+					<label class="radio-inline">
+							<input type="radio" name="magazine" id="radio-inline1" value=""> Yes
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="magazine" id="radio-inline2" value=""> No
+						</label>
+				</div>
+			</div>
+			<hr>
+
+			<!-- how many magazines  -->
 			<div class="row">
 				<div class="col-xs-12 form-group">
 					<fieldset>
-						<legend class="control-label">How many pets do you have?</legend>
+						<label class="control-label">How many?</label>
 						<label class="radio-inline">
-							<input type="radio" name="question3" id="radio-inline1" value=""> None
+							<input type="radio" name="question3" id="radio-inline1" value=""> 1
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="question3" id="radio-inline2" value=""> 1
+							<input type="radio" name="question3" id="radio-inline2" value=""> 2
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="question3" id="radio-inline3" value=""> 2
+							<input type="radio" name="question3" id="radio-inline3" value=""> 3
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="question3" id="radio-inline4" value=""> 3
+							<input type="radio" name="question3" id="radio-inline4" value=""> 4 or more
 						</label>
 					</fieldset>
 				</div>
 			</div>
-			<hr>
+			<hr>		
 
 			<!-- topics of interest ...  -->
 			<div class="row">
@@ -149,18 +163,18 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h4 class="modal-title">Thank you!</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Thanks for submitting the form! You will hear back from us shortly...</h4>
 			</div>
-		<div class="modal-body">
-			<p>Thanks for submitting the form! You will hear back from us shortly.</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-		</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+			<div class="modal-body">
+				<img src="img/dog.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- modal-content -->
+	</div><!-- modal-dialog -->
+</div><!-- modal -->
 
 
 <!-- JavaScript -->

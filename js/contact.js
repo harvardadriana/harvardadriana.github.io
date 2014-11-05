@@ -25,9 +25,7 @@ $(document).ready(function(){
 			}); // end attr
 		} else {
 			$('.message-group .help-block').text('');
-			$('.message-group').attr({
-				class: 'col-xs-5 col-xs-offset-4 form-group message-group'
-			}); // end attr
+			$('.message-group').attr({ class: 'col-xs-5 col-xs-offset-4 form-group message-group' }); // end attr
 		}
 	}); // end focus out
 

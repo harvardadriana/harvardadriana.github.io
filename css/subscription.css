@@ -1,0 +1,23 @@
+body {
+	margin-top: 150px;
+	padding: 1.5em;
+	color: #fff;
+}
+
+.containerSubscription {
+	padding: 0;
+}
+
+.thumbnail {
+	width: auto;
+	padding: 1.1em;
+	min-width: 200px;
+}
+
+h4 {
+	color: #fff;
+}
+
+.btn {
+    white-space: normal;
+}

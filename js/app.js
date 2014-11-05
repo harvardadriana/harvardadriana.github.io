@@ -71,4 +71,5 @@ $(document).ready(function(){
 			submit.preventDefault();
 		}
 	}); // end click
+
 });	
