@@ -4,13 +4,6 @@ h2 {
 	margin-top: 95px;
 }
 
-.containerMiddle {
-	margin-left: auto;
-	margin-right: auto;
-	height: 700px;
-	background-color: black;
-}
-
 .thumb {
 	max-width: 800px;
 	margin-top: 100px;
@@ -21,4 +14,9 @@ h2 {
 
 .thumb li {
 	opacity: 0.3;
+}
+
+#containerGallery {
+	margin: 0;
+	padding: 0;
 }
