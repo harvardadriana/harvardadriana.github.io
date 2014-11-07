@@ -11,12 +11,3 @@ background-color: #FFCCFF;
 #flag {
 padding: 1.5em;
 }
-
-#fakebutton {
-background-color: #414141;
-margin-left: 25px;
-width: 395px;
-padding: 12px;
-border-radius: 5px;
-color: #fff;
-}
