@@ -21,3 +21,7 @@ h4 {
 .btn {
     white-space: normal;
 }
+
+.missingButton {
+	color: #fff;
+}

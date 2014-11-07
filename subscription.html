@@ -10,12 +10,15 @@
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
 	 <link href="css/subscription.css" rel="stylesheet">
 	<script src="js/respond.js"></script>
+
 </head>
 
 <body>
 <div class="containerSubscription">
 	<div class="row">
 		<div class="col-xs-6 col-xs-offset-3">
+
+			<!--
 			<div class="thumbnail">
 				<a href="#"><img src="img/subscription.jpg" alt="" class="img-responsive"></a>
 				<div class="caption">
@@ -24,8 +27,21 @@
 					  <a href="#" class="btn btn-warning" role="button" id="nope">Nope, but please keep asking me everyday.</a></p>
 				</div>
 			</div>
+			-->
+
+			<p><a href="#"><img src="img/subscription.jpg" alt="" class="img-responsive"></a></p>
+			<h4>Would you like to subscribe to our daily bloodhoroscope pleeeease?</h4>
+			<p><a href="#" class="btn btn-warning" role="button" id="sure">Sure!</a></p>
+			<button class="btn btn-warning" id="nope">Nope, but keep asking me everyday.</button>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3" id="missingButton">
+			<p></p>
+		</div>
+	</div>
+
 </div>
 
 <!-- JavaScript -->
@@ -36,18 +52,24 @@
  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
  <script src="js/bootstrap.min.js"></script>
- <script src="js/contact.js"></script>
 
 <script>
 $(document).ready(function(){
 	console.log("Ready!");
 
-	// image hovering
-	$('img').hover(function(){
-		$(this).css( 'border-bottom', 'solid 4px silver' )}, 
-		function(){
-		$(this).css( 'border-bottom', 'none' )}
+	if($('#sure').click(function(){ alert('Thank you for subscribing!'); })
 	);
+
+	// 'Hide' button
+   	if($("button").hover(function(){ $('button').animate({ "marginLeft" : "-700px" }) }, 
+       			      function(){ 	$('button').animate({ "marginLeft" : "-700px"}); 
+       			      		$('#missingButton').text('Ops, it seems that this button went missing!!') 
+   				         }   
+   			      )   			       
+   	) {   }
+   
+});
+
 </script>
 
 </body>

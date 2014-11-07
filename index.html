@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="bodyOrange">
 
 <div class="container">
 	
@@ -157,7 +157,14 @@
 <!-- if jQuery from internet is not available use following: -->
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/inde.js"></script>
+<script>
+
+$(document).ready(function(){
+	console.log('Ready!');
+    	$('article a').tooltip();
+});
+
+</script>
 
 </body>
 </html>

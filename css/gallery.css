@@ -1,22 +1,4 @@
 h2 {
-	color: #fff;
-	text-align: center;
-	margin-top: 95px;
+margin-top: 4.5em;
 }
 
-.thumb {
-	max-width: 800px;
-	margin-top: 100px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 560px;
-}
-
-.thumb li {
-	opacity: 0.3;
-}
-
-#containerGallery {
-	margin: 0;
-	padding: 0;
-}
