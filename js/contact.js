@@ -2,7 +2,7 @@ $(document).ready(function(){
 	console.log("Ready!");
 
 	// show email form
-	$('#email').click(function () {
+	$('#emailpic').click(function () {
 		$('#myForm').attr('class', 'visible');
 		$('#contact').attr('class', 'hidden');
 		$('#myPhone').attr('class', 'hidden');
